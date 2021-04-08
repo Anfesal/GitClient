@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.4.4'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id "org.sonarqube" version "3.1.1"
 }
 
 group = 'io.quind'
@@ -18,9 +19,6 @@ dependencies {
 	implementation 'org.eclipse.jgit:org.eclipse.jgit:5.4.2.201908231537-r'
 }
 
-plugins {
-	id "org.sonarqube" version "3.1.1"
-}
 
 sonarqube {
 	properties {
